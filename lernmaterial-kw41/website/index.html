@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a365d" />
+  <title>SWP Python · Quiz KW 41</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <p class="brand">SWP Python 5B</p>
+    <h1>Lernquiz bis KW 41</h1>
+    <p class="sub">Tippe eine Antwort · sofortiges Feedback</p>
+  </header>
+
+  <main>
+    <section id="start" class="card-screen">
+      <p><strong id="anzahl">0</strong> Fragen aus Sammlung + Zusatz.</p>
+      <p class="hint">Stoff: Grundlagen, Typen, Kontrollstrukturen, list/dict, Lotto, Stil.</p>
+      <button type="button" id="btn-start" class="btn primary">Quiz starten</button>
+      <button type="button" id="btn-stoff" class="btn ghost">Kurz-Stoff anzeigen</button>
+    </section>
+
+    <section id="stoff" class="card-screen hidden">
+      <h2>Kurzüberblick</h2>
+      <ul class="stoff-list">
+        <li><b>KW38</b> KI ≠ Blindflug: Grundlagen zum Prüfen/Haften</li>
+        <li><b>KW39</b> Py2/3, iterativ/rekursiv, Prozess/Thread, Hints, if/match/Schleifen/try</li>
+        <li><b>KW40</b> list / array / dict, Lotto ohne Doppelte, Statistik-dict</li>
+        <li><b>KW41</b> Datentypen, // Floor, Shebang, 4 Spaces, Keywords, pass</li>
+      </ul>
+      <button type="button" id="btn-stoff-back" class="btn primary">Zurück</button>
+    </section>
+
+    <section id="quiz" class="card-screen hidden">
+      <div class="meta">
+        <span id="progress">1 / 1</span>
+        <span id="score">0 richtig</span>
+        <span id="quelle" class="pill">Sammlung</span>
+      </div>
+      <h2 id="frage-text">Frage</h2>
+      <div id="optionen" class="optionen"></div>
+      <div id="feedback" class="feedback hidden" role="status"></div>
+      <button type="button" id="btn-next" class="btn primary hidden">Weiter</button>
+    </section>
+
+    <section id="ende" class="card-screen hidden">
+      <h2>Fertig</h2>
+      <p class="result" id="ergebnis">0 / 0</p>
+      <p id="wertung" class="hint"></p>
+      <button type="button" id="btn-restart" class="btn primary">Nochmal</button>
+      <button type="button" id="btn-home" class="btn ghost">Start</button>
+    </section>
+  </main>
+
+  <footer>
+    <a href="../SWP_Python_Lernzusammenfassung_KW41.pdf">PDF-Zusammenfassung öffnen</a>
+  </footer>
+
+  <script src="fragen.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
